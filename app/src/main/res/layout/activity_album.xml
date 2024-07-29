@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+  <TextView
+      android:id="@+id/album_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Album Name"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/photo_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/album_text_view"
+      android:layout_marginTop="16dp" />
+
+</RelativeLayout>
